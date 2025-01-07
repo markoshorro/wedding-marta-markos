@@ -1,11 +1,11 @@
 # Color settings (hex-codes without the leading hashtag)
 color:
-  primary: f8d56f
-  secondary: facf6b   
+  primary: 5471ff
+  secondary: 6faff8   
   secondary-dark: 333
   muted: 777
 
 # Fonf families
 font:
-  primary: 'Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif'
-  secondary: 'Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif'
+  primary: "TrojanPro-Bold",'Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif'
+  secondary: "TrojanPro-Regular", 'Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif'

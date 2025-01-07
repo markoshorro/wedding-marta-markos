@@ -4613,6 +4613,11 @@ readers do not read off random characters that represent icons */
   src: url("../webfonts/fa-solid-900.eot");
   src: url("../webfonts/fa-solid-900.eot?#iefix") format("embedded-opentype"), url("../webfonts/fa-solid-900.woff2") format("woff2"), url("../webfonts/fa-solid-900.woff") format("woff"), url("../webfonts/fa-solid-900.ttf") format("truetype"), url("../webfonts/fa-solid-900.svg#fontawesome") format("svg"); }
 
+  @font-face {
+    font-family: TrajanPro-Regular;
+    src: url("../webfonts/TrajanPro-Regular.eot");
+    src: url("../webfonts/TrajanPro-Regular.eot?#iefix") format('embedded-opentype'),url("../webfonts/TrajanPro-Regular.woff2") format('woff2'),url("../webfonts/TrajanPro-Regular.woff") format('woff'),url("../webfonts/TrajanPro-Regular.ttf") format('truetype'),url("../webfonts/fonts/TrajanPro-Regular.svg#glyphicons_halflingsregular") format('svg') }
+b
 .fa,
 .fas {
   font-family: 'Font Awesome 5 Free';
