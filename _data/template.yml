@@ -7,5 +7,5 @@ color:
 
 # Fonf families
 font:
-  primary: "TrojanPro-Bold",'Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif'
-  secondary: "TrojanPro-Regular", 'Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif'
+  primary: "TrajanPro-Regular",'Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif'
+  secondary: "TrajanPro-Regular", 'Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif'
