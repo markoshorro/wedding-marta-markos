@@ -456,31 +456,23 @@ header .intro-text .intro-heading {
     }
 
     .distorted-background {
-        position: relative; /* Necesario para posicionar los elementos dentro */
+        position: relative; /* Necesario para posicionar el texto correctamente */
         width: 100%;
         height: 400px;
         background-image: url('/img/backgrounds/pazo_1.jpg');
         background-size: cover;
         background-position: center;
-    }
-    
-    .distorted-background .overlay {
-        position: absolute; /* Capa de superposición absoluta */
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(0, 0, 0, 0.5); /* Capa translúcida */
-        backdrop-filter: blur(5px); /* Aplica un filtro sobre la capa */
-        z-index: 1; /* La capa de superposición está por debajo del texto */
+        filter: blur(5px) contrast(1.2) saturate(1.5); /* Filtro aplicado a la imagen */
+        transform: scale(1.1) rotate(-2deg); /* Distorsión visual */
     }
     
     .distorted-background h1 {
-        position: relative; /* Posiciona el texto respecto a su contenedor */
-        z-index: 2; /* Asegura que el texto se ponga encima de la capa translúcida */
+        position: relative; /* Necesario para usar z-index */
+        z-index: 10; /* Asegura que el texto esté encima del fondo */
         color: white;
         font-size: 3rem;
         text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+        padding: 20px;
     }
 }
 
