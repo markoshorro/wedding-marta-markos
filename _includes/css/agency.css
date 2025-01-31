@@ -404,6 +404,9 @@ header .intro-text .intro-heading {
     /*font-weight: 700;*/
     line-height: 75px;
     padding-bottom: 15px;
+    line-height: 75px;
+    background-color: rgba(187, 171, 140, 0.7);
+    display: inline-block;
 }
 
 @media(min-width:768px) {
