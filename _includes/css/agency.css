@@ -417,7 +417,6 @@ header .intro-text .intro-heading {
     font-size: 75px;
     line-height: 75px;
     padding: 15px 30px;
-    background-color: rgba(187, 171, 140, 0.7); /* Fondo semitransparente solo para el texto */
     display: inline-block;
     border-radius: 10px;
 }
@@ -488,7 +487,6 @@ section h3.section-subheading {
     -webkit-transition: all ease .5s;
     -moz-transition: all ease .5s;
     transition: all ease .5s;
-    background: rgba(254,209,54,.9); /* Fallback when no plugin support */
     background: rgba({{ site.data.template.color.primary | hex_to_rgb | join: ',' }}, .9);
 }
 
