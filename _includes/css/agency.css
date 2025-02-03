@@ -365,114 +365,76 @@ fieldset[disabled] .btn-m.active {
 }
 
 header {
+    position: relative;
     text-align: center;
     color: #fff;
     background-attachment: scroll;
-    background-image: url('{{ site.baseurl }}/img/backgrounds/pazo_1.jpg'); 
+    background-image: url('{{ site.baseurl }}/img/backgrounds/pazo_1.jpg');
     background-position: center center;
-    /*background-position: top center;*/
-    background-repeat: none;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
+    background-repeat: no-repeat;
     background-size: cover;
-    -o-background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
+/* Capa para el fondo desenfocado */
+header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: inherit;
+    background-size: cover;
+    background-position: center;
+    filter: blur(5px); /* Aplica desenfoque SOLO al fondo */
+    z-index: 1;
+}
+
+/* Contenido del header (texto) */
 header .intro-text {
-    padding-top: 100px;
-    padding-bottom: 50px;
+    position: relative;
+    z-index: 2; /* Asegura que el texto esté encima del fondo difuminado */
+    padding: 100px 20px;
 }
 
 header .intro-text .intro-lead-in {
     margin-bottom: 25px;
-    /*font-family: {{ site.data.template.font.secondary }};*/
     font-family: {{ site.data.template.font.primary }};
-    /*font-family: 'Lato';*/
     font-weight: 300;
     font-size: 22px;
-    /*font-style: italic;*/
-    line-height: 22px;
+    text-shadow: 1px 1px 2px #000000;
 }
 
 header .intro-text .intro-heading {
     margin-bottom: 25px;
-    /*text-transform: uppercase;*/
-    /*font-family: {{ site.data.template.font.primary }};*/
     font-family: 'TrajanPro-Bold';
     text-shadow: 2px 2px 4px #000000;
     font-size: 75px;
-    /*font-weight: 700;*/
     line-height: 75px;
-    padding-bottom: 15px;
-    line-height: 75px;
-    background-color: rgba(187, 171, 140, 0.7);
+    padding: 15px 30px;
+    background-color: rgba(187, 171, 140, 0.7); /* Fondo semitransparente solo para el texto */
     display: inline-block;
+    border-radius: 10px;
 }
 
-@media(min-width:768px) {
-	header {
-    text-align: center;
-    color: #fff;
-    background-attachment: scroll;
-    background-image: url('{{ site.baseurl }}/img/backgrounds/pazo_1.jpg'); 
-    /*background-position: center center;*/
-    background-position: top center;
-    background-repeat: none;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
-    /*opacity: 0.5;*/
-	}
+@media (min-width: 768px) {
+    header {
+        background-position: top center;
+    }
 
     header .intro-text {
-        /*padding-top: 300px;*/
         padding-top: 280px;
-        /*padding-bottom: 200px;*/
         padding-bottom: 100px;
     }
-
-    header .intro-text .intro-lead-in {
-        margin-bottom: 25px;
-        /*font-family: {{ site.data.template.font.secondary }};*/
-        font-family: {{ site.data.template.font.primary }};
-        text-shadow: 1px 1px 2px #000000;
-        /*font-family: 'Lato';*/
-        font-weight: 300;
-        font-size: 40px;
-        /*font-style: italic;*/
-        line-height: 40px;
-    }
-
-    header .intro-text .intro-heading {
-        margin-bottom: 100px;
-        /*text-transform: uppercase;*/
-        /*font-family: {{ site.data.template.font.primary }};*/
-        font-family: 'TrajanPro-Bold';
-        text-shadow: 2px 2px 4px #000000;
-        font-size: 75px;
-        /*font-weight: 700;*/
-        line-height: 75px;
-    }
-
-    .distorted-background {
-        position: relative; /* Necesario para posicionar el texto correctamente */
-        width: 100%;
-        height: 400px;
-        background-image: url('/img/backgrounds/pazo_1.jpg');
-        background-size: cover;
-        background-position: center;
-        filter: blur(5px) contrast(1.2) saturate(1.5); /* Filtro aplicado a la imagen */
-        transform: scale(1.1) rotate(-2deg); /* Distorsión visual */
-    }
     
-    .distorted-background h1 {
-        position: relative; /* Necesario para usar z-index */
-        z-index: 10; /* Asegura que el texto esté encima del fondo */
-        color: white;
-        font-size: 3rem;
-        text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
-        padding: 20px;
+    header .intro-text .intro-lead-in {
+        font-size: 40px;
+        line-height: 40px;
     }
 }
 
