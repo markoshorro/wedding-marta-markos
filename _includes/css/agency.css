@@ -399,7 +399,7 @@ header::before {
 header .intro-text {
     position: relative;
     z-index: 2; /* Asegura que el texto esté encima del fondo difuminado */
-    padding: 100px 20px;
+    /* padding: 100px 20px; */
 }
 
 header .intro-text .intro-lead-in {
@@ -416,7 +416,7 @@ header .intro-text .intro-heading {
     text-shadow: 2px 2px 4px #000000;
     font-size: 75px;
     line-height: 75px;
-    padding: 15px 30px;
+    /*padding: 15px 30px;*/
     display: inline-block;
     border-radius: 10px;
 }
